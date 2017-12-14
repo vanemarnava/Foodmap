@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<title> F O O D M A P</title>
+	<!-- enlace bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- enlace estilos css -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<!-- enlace script jquery -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<!-- iconos -->
+	<link rel="stylesheet" href="assets/icomoon/style.css">
+
+	<!-- <span class="icon-checkbox-unchecked"></span> -->
+
+</head>
+<body>
+	<!-- inicio primera pantalla que desaparece-->
+	<div class="container-fluid black">
+  	<div class="row">
+    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="firstLogo">
+					<h1>Foodmap</h1>
+				</div>
+      </div>
+    </div>
+  </div> <!-- fin seccion -->
+
+
+	<!-- seccion header segunda pantalla -->
+	<!-- <header class="principal"> -->
+		<div class="container-fluid principal">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="secondLogo">
+						<h1>Foodmap</h1>
+						<hr>
+					</div>
+				</div> <!-- fin columnas -->
+			</div> <!-- fin row -->
+		</div> <!-- fin container fluid -->
+	<!-- </header> -->
+	
+	<!-- primera seccion mapa-->
+	<!-- <section class="firstSectionMap"> -->
+		<div class="container-fluid firstSectionMap">
+			<!-- fila -->
+			<div class="row">
+				<!-- columna -->
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<!-- mapa -->
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6660.35060094416!2d-70.64110096773679!3d-33.41867379272864!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512475216416" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div> <!-- fin mapa -->
+				</div> <!-- fin columna -->
+			</div> <!-- fin row -->
+		</div> <!-- fin seccion mapa -->
+		
+		<!-- segunda seccion filtro -->
+		<div class="container-fluid filtroSection"> 	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h3 class="foodTitle">Comida cerca de ti</h3>
+		     	<div id="custom-search-input">	
+		     		<!-- columnas para filtro -->
+		        <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<select id="options" class="form-control input-lg">
+								<!-- opciones, la primera esta desactivada -->
+								<option value="" disabled selected="">Seleccione el tipo de comida que desea</option>
+							  <option class="japonesa" value="japonesa">Japonesa</option>
+							  <option class="mexicana" value="mexicana">Mexicana</option>
+							  <option id="italiana" value="italiana">Italiana</option>
+							</select>
+						</div>
+					</div>
+				</div> <!-- fin primera columna -->
+			</div> <!-- fin row -->
+		</div>  <!-- fin segunda seccion filtro  -->
+	<!-- </section> --> <!-- fin primera seccion -->
+	
+	<section id="japFood" class="japaneseFood container-fluid">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+							<!-- imagen y texto mouseover -->
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/japo1.jpg" alt="japon1" class="japo1" data-toggle="modal" data-target="#japonesa">
+								<div class="jap1">
+									<p>Sushiiii!!!</p>
+								</div>
+							</div>
+
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/japo2.jpg" alt="japon2" class="japo2" data-toggle="modal" data-target="#japonesa">
+								<div class="jap2">
+									<p>venga!!!</p>
+								</div>
+							</div>
+							
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/japo3.jpg" alt="japon3" class="japo3" data-toggle="modal" data-target="#japonesa">
+								<div class="jap3">
+									<p>coma aquiii!!!</p>
+								</div>
+							</div>
+							
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/japo5.jpg" alt="japon5" class="japo5" data-toggle="modal" data-target="#japonesa">
+								<div class="jap5">
+									<p>Neko kawaiiii!!!</p>
+								</div>
+							</div>
+
+							<div class="container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<img src="assets/img/japo6.jpg" alt="japon6" class="japo6" data-toggle="modal" data-target="#japonesa">
+								<div class="jap6">
+									<p>muy rico!!!</p>
+								</div>
+							</div>
+							<!-- <img src="assets/img/japo4.jpg" alt="japon4" class="japo4" data-toggle="modal" data-target="#japonesa">> -->				
+						<!-- </div> -->
+					</div>
+				</div><!-- fin columna -->
+			</div> <!-- fin row -->	
+		</div> <!-- fin container -->		
+	</section> <!-- fin seccion -->
+
+	
+	<section id="mexFood" class="mexicanFood container-fluid">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+
+							<!-- imagen y texto mouseover -->
+							<div class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/mexi1.jpg" alt="mexi1" class="mexico1" data-toggle="modal" data-target="#mexicana">
+								<div class="mex1">
+									<p>Viva Mexico!!!</p>
+								</div>
+							</div>
+
+							<div class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/mexi2.jpg" alt="mexi2" class="mexico2" data-toggle="modal" data-target="#mexicana">
+								<div class="mex2">
+									<p>pues venga!!!</p>
+								</div>
+							</div>
+							
+							<div class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/mexi3.jpg" alt="mexi3" class="mexico3" data-toggle="modal" data-target="#mexicana">
+								<div class="mex3">
+									<p>coma aquiii!!!</p>
+								</div>
+							</div>
+							
+							<div class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/mexi4.jpg" alt="mexi4" class="mexico4" data-toggle="modal" data-target="#mexicana">
+								<div class="mex4">
+									<p>me gusta los tamales!!!</p>
+								</div>
+							</div>
+
+							<div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<img src="assets/img/mexi5.jpg" alt="mexi5" class="mexico5" data-toggle="modal" data-target="#mexicana">
+								<div class="mex5">
+									<p>orale orale!!!</p>
+								</div>
+							</div>
+
+					</div><!-- fin row -->
+				</div><!-- fin columna -->
+			</div> <!-- fin row -->	
+		</div> <!-- fin container -->		
+	</section> <!-- fin seccion -->
+
+	<section id="itaFood" class="italianFood container-fluid">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+							<!-- imagen y texto mouseover -->
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/ita1.png" alt="ita1" class="italy1" data-toggle="modal" data-target="#italiana">
+								<div class="ita1">
+									<p>Paaasssstaaaa!!!</p>
+								</div>
+							</div>
+
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/ita2.jpg" alt="ita2" class="italy2" data-toggle="modal" data-target="#italiana">
+								<div class="ita2">
+									<p>bella!!!</p>
+								</div>
+							</div>
+							
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/ita3.jpg" alt="ita3" class="italy3" data-toggle="modal" data-target="#italiana">
+								<div class="ita3">
+									<p>coma aquiii!!!</p>
+								</div>
+							</div>
+							
+							<div class="container-fluid col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<img src="assets/img/ita4.jpg" alt="ita4" class="italy4" data-toggle="modal" data-target="#italiana">
+								<div class="ita4">
+									<p>Italia es lo mejor!!!</p>
+								</div>
+							</div>
+
+							<div class="container-fluid col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<img src="assets/img/ita5.jpg" alt="ita5" class="italy5" data-toggle="modal" data-target="#italiana">
+								<div class="ita5">
+									<p>muy rico!!!</p>
+								</div>
+							</div>
+					</div><!-- fin row -->
+				</div><!-- fin columna -->
+			</div> <!-- fin row -->	
+		</div> <!-- fin container -->		
+	</section> <!-- fin seccion -->
+
+	<!-- modales -->
+	<!-- modal de restaurant japones -->
+	<div id="japonesa" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+
+	    	<!-- encabezado modal -->
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title">Restaurant Japones</h3>
+	      </div> <!-- fin encabezado modal -->
+
+	      <!-- cuerpo del modal -->
+	      <div class="modal-body">
+	      	<!-- mapa en el modal -->
+	      	<div class="modalMap">
+						<iframe class="mapModal" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6660.35060094416!2d-70.64110096773679!3d-33.41867379272864!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512475216416" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div> <!-- fin mapa -->
+				  
+				  <h4>Av. No somos chinitos 1234</h4>
+				  <p>Rango: $8.000 aprox - $50.000 (p/p)</p>
+				  <p>Delivery: Sí</p>
+				  <p>Horario: 11:00 - 23:00 todos los dias</p>
+				  <p>Teléfono: +56 2 12345678</p>
+				  <p>Mail: nosomoschinos@gmail.com</p>
+       	</div> <!-- fin cuerpo modal -->
+
+	      <div class="modal-footer">
+	      	<div align="center">
+	        <button type="button" class="btn boton" data-dismiss="modal">Quiero esto!!</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div> <!-- fin modal japones-->
+	
+	<!-- modal de restaurant mexicano -->
+	<div id="mexicana" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+
+	    	<!-- encabezado modal -->
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title">Restaurant Mexicano</h3>
+	      </div> <!-- fin encabezado modal -->
+
+	      <!-- cuerpo del modal -->
+	      <div class="modal-body">
+	      	<!-- mapa en el modal -->
+	      	<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6660.35060094416!2d-70.64110096773679!3d-33.41867379272864!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512475216416" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div> <!-- fin mapa -->
+				  
+				  <h4>Av. Los de afuera 1234</h4>
+				  <p>Rango: $8.000 aprox - $50.000 (p/p)</p>
+				  <p>Horario: 11:00 - 23:00 todos los dias</p>
+				  <p>Delivery: Sí</p>
+				  <p>Teléfono: +56 2 87654321</p>
+				  <p>Mail: oralepues@gmail.com</p>
+       	</div> <!-- fin cuerpo modal -->
+
+	      <div class="modal-footer">
+	      	<div align="center">
+	        <button type="button" class="btn boton" data-dismiss="modal">Quiero esto!!</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div> <!-- fin modal mexicano-->
+	
+	<!-- modal de restaurant italiano -->
+	<div id="italiana" class="modal fade" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+
+	    	<!-- encabezado modal -->
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title">Restaurant Italiano</h3>
+	      </div> <!-- fin encabezado modal -->
+
+	      <!-- cuerpo del modal -->
+	      <div class="modal-body">
+	      	<!-- mapa en el modal -->
+	      	<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6660.35060094416!2d-70.64110096773679!3d-33.41867379272864!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512475216416" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				  </div> <!-- fin mapa -->
+				  
+				  <h4>Av. Duerme siesta 1234</h4>
+				  <p>Rango: $8.000 aprox - $50.000 (p/p)</p>
+				  <p>Delivery: Sí</p>
+				  <p>Horario: 11:00 - 23:00 todos los dias</p>
+				  <p>Teléfono: +56 2 12348765</p>
+				  <p>Mail: muchapasta@gmail.com</p>
+       	</div> <!-- fin cuerpo modal -->
+
+	      <div class="modal-footer">
+	      	<div align="center">
+	        <button type="button" class="btn boton" data-dismiss="modal">Quiero esto!!</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div> <!-- fin modal italiano-->
+
+
+
+	<!-- scripts -->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

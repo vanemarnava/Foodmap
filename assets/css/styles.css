@@ -1,0 +1,167 @@
+
+/*Estilos generales*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-color: #484848;
+}
+
+/*estilo primera pantalla que desaparece*/
+.black
+{
+ background-color: #484848;
+ position: fixed;
+/* position: absolute;*/
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ overflow: auto;
+ z-index: 1;
+ color: #efa70b;
+ text-align: center;
+}
+
+/*Estilo segundo titulo, de la pagina principal*/
+.secondLogo
+{
+	color: #efa70b;
+}
+
+/*Estilo titulo de la primera pantalla*/
+.firstLogo
+{
+	margin-top: 20em;
+	color: #efa70b;
+}
+
+/*Estilo header de la pantalla principal*/
+.principal
+{
+	text-align: center;
+	color: #efa70b;
+}
+
+.foodTitle
+{
+	text-align: center;
+	color: #efa70b;
+	background-color: #484848;
+	margin-bottom: 1em;
+}
+
+/*Estilo filtro*/
+.filtroSection
+{
+	border-radius: 0.5em;
+	margin-top: 3.5em;
+	border: none;
+	margin: 3em 1.5em 2em 1.5em;
+}
+
+#custom-search-input
+{
+  border: none;
+  background-color: #fff;
+}
+
+#custom-search-input input
+{
+  border: 0;
+  box-shadow: none;
+}
+
+
+/*Estilo mapa*/
+.map
+{
+	width: 100%;
+	height: 200px;
+	margin-top:25px;
+	padding: 5px;
+	border: 2px solid white;
+	border-radius: 0.5em;
+}
+
+/*Estilo imagenes*/
+img
+{
+	height: 15em;
+	width: 22em;
+	margin: 2em 1em;
+	border-radius: 5em;
+}
+
+/*Estilos modales*/
+.modal-dialog
+{
+	margin-top: 2.5em;
+	text-align: center;
+	padding: 0 1.5em;
+}
+
+.modal-header, .modal-footer
+{
+  border: none;
+}
+
+.modal-footer
+{
+  padding: 0;
+}
+
+.modal-header
+{
+  border-bottom: 0;
+}
+
+/*Estilo efecto overplay japones*/
+.jap1, .jap2, .jap3, .jap6, .jap5
+{
+	height: 15em;
+	width: 22em;
+	background-color: #000;
+  color: #FFF;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+  position: fixed;
+  top: 0.5em;
+  display:none;
+}
+
+/*Estilo efecto overplay mexicano*/
+.mex1, .mex2, .mex3, .mex4, .mex5
+{
+	height: 15em;
+	width: 22em;
+	background-color: #000;
+  color: #FFF;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+  position: fixed;
+  top: 0.5em;
+  display:none;
+}
+
+/*Estilo efecto overplay italiano*/
+.ita1, .ita2, .ita3, .ita4, .ita5
+{
+	height: 15em;
+	width: 22em;
+	background-color: #000;
+  color: #FFF;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+  position: fixed;
+  top: 0.5em;
+  display:none;
+}
+
